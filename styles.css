@@ -1,0 +1,807 @@
+@import url(https://db.onlinewebfonts.com/c/0a04764859a18deebd98179d29127ea3?family=Marquette);
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Мінімальна висота сторінки на всю висоту вікна браузера */
+  margin: 0; /* Забирає зовнішні відступи */
+  background: #F4EBD6;
+  height: 10000px;
+}
+
+main {
+  flex-grow: 1; /* Розтягнути основний контент, щоб заповнити вільний простір */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 1550px;
+  margin: 0 auto; /* Центрувати контейнер по горизонталі */
+  flex: 1;
+}
+
+footer {
+  background: #172A5C;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Загальні стилі для тексту у футері */
+.footer-text1 {
+  color: #FFF;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  font-family: 'Anonymous Pro', sans-serif;
+}
+
+/* Стилі для першої частини тексту (Vadik) */
+.first-part {
+  color: #FFF;
+  font-family: 'Anonymous Pro', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/* Стилі для символу "&" (амперсанд) */
+.ampersand {
+  transform: rotate(-1.749deg);
+  text-align: center;
+  font-family: Marquette, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.922%; /* 78.03px */
+  text-transform: uppercase;
+  padding: 0 5px;
+}
+
+.footer-text2 {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Anonymous Pro', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 25px 0;
+}
+
+.headNav {
+  list-style-type: none; /* Прибирає маркери (точки) */
+  padding: 0; /* Прибирає внутрішні відступи */
+  margin: 0; /* Прибирає зовнішні відступи */
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 181px;
+}
+
+.headNav>li>a {
+  color: #172A5C;
+  font-family: 'Anonymous Pro', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none; /* Прибирає підкреслення з посилань */
+}
+
+.headNav>li>a.active {
+  font-family: 'Anonymous Pro', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none; 
+}
+
+/* Стилі для блоків фотогалереї */
+.block_foto_galery {
+  flex: 0 0 calc(43% - 10px); /* Розділити на 2 колонки з відступом */
+  margin-bottom: 20px; /* Відступ між блоками у вертикальному напрямку */
+  padding: 31.909px 30.149px 39.439px 30.15px; /* Перенесення властивостей padding до одного рядка */
+  background: #FFF;
+  box-sizing: border-box; /* Забезпечити правильний розрахунок ширини */
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .block_foto_galery {
+    flex: 0 0 calc(50% - 10px); /* По одному блоку в ряду на малих екранах */
+    margin-bottom: 10px; /* Зменште відступ для мобільних пристроїв */
+  }
+}
+
+.block_foto_galery img {
+  max-width: 100%; /* Робимо фото адаптивними */
+  height: auto; /* Зберігаємо пропорції фото */
+  width: 100%; /* Додати 100% ширину для розтягнення фото в колонці */
+  max-width: 450px; /* Фіксований розмір фото (200px) */
+}
+
+.block_foto_galery video {
+  max-width: 100%; /* Робимо фото адаптивними */
+  height: auto; /* Зберігаємо пропорції фото */
+  width: 100%; /* Додати 100% ширину для розтягнення фото в колонці */
+  max-width: 450px; /* Фіксований розмір фото (200px) */
+}
+
+.block_foto_galery p {
+  color: #1D1D1D;
+  font-family: Anonymous Pro;
+  font-size: 25.467px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.block_foto_galery:nth-child(odd) {
+  margin-left: 100px; /* Відступ зліва для лівих блоків */
+}
+
+.block_foto_galery:nth-child(even) {
+  margin-right: 100px; /* Відступ справа для правих блоків */
+}
+
+/* головна сторінка */
+.block-1 {
+  margin-bottom: 75px;
+}
+
+.block-1Text1 {
+  color: #9B171F;
+  font-family: Anonymous Pro;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.block-1Text2 {
+  color: #9B171F;
+  font-family: Anonymous Pro;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 5px;
+  order: -1;
+}
+
+.block-1 > p {
+  color: #172A5C;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.miniBlock1 {
+  position: relative; /* Встановлюємо позицію relative для контейнера */
+  margin-top: 20px;
+  display: flex; /* Додаємо це для зміни порядку відображення дітей */
+  flex-direction: column; /* Встановлюємо вертикальну орієнтацію для дітей */
+}
+
+.miniBlock1 img {
+  max-width: 100%; /* Робимо зображення адаптивним */
+  height: auto; /* Зберігаємо пропорції зображення */
+}
+
+.miniBlock1p {
+  position: absolute; /* Встановлюємо позицію absolute для тексту */
+  top: 50%; /* Верхній край тексту розташовується посередині блоку */
+  left: 50%; /* Лівий край тексту розташовується посередині блоку */
+  transform: translate(-50%, -50%); /* Це центрує текст відносно середини блоку */
+  z-index: 1; /* Задаємо зверхній шар тексту, щоб він накладався на зображення */
+  text-align: center; /* Вирівнювання тексту по центру */
+  padding: 10px; /* Відступи внутрішнього тексту */
+  padding-bottom: 100px;
+}
+
+.block-2 {
+  width: 100%;
+  height: 471px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Vertically space the elements */
+  align-items: center;
+  position: relative; 
+}
+
+.block-2 p {
+  color: #172A5C;
+  font-family: Anonymous Pro;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%; /* Adjust as needed to vertically center it */
+  left: 50%; /* Adjust as needed to horizontally center it */
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.imgAutumn {
+  transform: rotate(-1.749deg);
+  color: #F4EBD6;
+  text-align: center;
+  font-family: Marquette;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.922%; /* 117.045px */
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%; /* Adjust as needed to vertically center it */
+  left: 50%; /* Adjust as needed to horizontally center it */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.imgMemories {
+  width: 355px;
+  height: 230px;
+  flex-shrink: 0;
+  position: absolute;
+  top: -35px;
+  left: 30px;
+}
+
+.block-2 img:last-child {
+  width: 436px;
+  height: 369px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: -65px;
+  right: -10px;
+}
+
+.block-3 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left-part {
+  flex: 1;
+}
+
+.photo-frame {
+  padding: 20px; /* Внутрішні відступи для фотокадра */
+  /* Додайте фотографію як фон або замініть цей блок зображеннями */
+  background-image: url('/шлях-до-фотографії.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Висота фотокадра */
+}
+
+.right-part {
+  flex: 1;
+  padding: 20px; /* Внутрішні відступи для правої частини */
+}
+
+.right-part h2 {
+  color: #9B171F;
+  font-family: Anonymous Pro;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  max-width: 70%;
+}
+
+.right-part_p {
+  color: #172A5C;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 467px;
+  margin: 0 0 40px 237px;
+}
+
+.message-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.message {
+  padding: 0px 10px;
+  border-radius: 20px;
+  margin: 5px;
+  max-width: 50%;
+  font-family: Anonymous Pro;
+  font-size: 19.311px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.message.message_Vadik {
+  align-self: flex-end;
+  background-color: #125688;
+  color: #fff;
+}
+
+.message.message_Anya {
+  align-self: flex-start;
+  background-color: #fff;
+  color: #000;
+}
+
+.photo-frame {
+  padding: 20px 20px 50px 20px;
+  width: 350px;
+  height: 450px;
+  overflow: hidden; 
+  background-color: #fff;
+  position: relative;
+  transform: rotate(-4.99deg);
+  top: -30px;
+  left: 100px;
+}
+
+.photo-frame img {
+  width: 100%; /* Заповнює ширину рамки */
+  height: 100%; /* Заповнює висоту рамки */
+  object-fit: cover;
+}
+
+.photo-frame_big{
+  width: 450px;
+  height: 650px;
+}
+
+.date_mini_block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #9B171F;
+  font-family: Anonymous Pro;
+  font-size: 16.868px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.imgb3nakl {
+  width: 351.023px;
+  height: 130.008px;
+  transform: rotate(-16.087deg);
+  flex-shrink: 0;
+  position: relative; /* Встановлення позиції абсолютної для зображення */
+  top: 20px;
+  left: 171px;
+  z-index: 2;
+}
+
+.block-4 p {
+  color: #F2F0E6;
+  font-family: Anonymous Pro;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.block-4 {
+  background: #172A5C;
+}
+
+.image-container_block-4 {
+  width: 386.503px;
+  height: 511.225px;
+  flex-shrink: 0;
+  width: 100%; /* Установите ширину контейнера по вашему усмотрению */
+  height: 50%; /* Установите высоту контейнера так, чтобы отобразить только половину изображения */
+  overflow: hidden; /* Обрезать все, что выходит за пределы контейнера */
+  position: relative;
+  bottom: 60px;
+}
+
+.image-container_block-4 img {
+  width: 100%; /* Ширина изображения должна быть 100% от родительского контейнера */
+  height: auto; /* Автоматическая высота, чтобы сохранить соотношение сторон */
+  position: absolute; /* Позиционирование изображения относительно родительского контейнера */
+  top: -80px;
+  left: 0;
+  transform: translateX(-73%);
+}
+
+.image-container_block-4-2 {
+  width: 7%; /* Установите ширину контейнера по вашему усмотрению */
+  height: 50%; /* Установите высоту контейнера так, чтобы отобразить только половину изображения */
+  overflow: hidden; /* Обрезать все, что выходит за пределы контейнера */
+  position: relative;
+  top: 285px;
+  left: 721px;
+  
+}
+
+.image-container_block-4-2 img {
+  width: 100%; /* Ширина изображения должна быть 100% от родительского контейнера */
+  height: auto; /* Автоматическая высота, чтобы сохранить соотношение сторон */
+  position: absolute; /* Позиционирование изображения относительно родительского контейнера */
+  top: 0; /* Размещение изображения вверху контейнера */
+  left: 0; /* Размещение изображения влево контейнера */
+  transform: translateY(-22%);
+}
+
+.block-5 {
+  display: flex; /* Используем flex-контейнер для разделения на два блока */
+  justify-content: space-between; 
+  margin-bottom: -280px;
+}
+
+.left-part_block5 h2 {
+  color: #9B171F;
+  font-family: Anonymous Pro;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.right-part_p_block5 {
+  color: #172A5C;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.message-block_block-5 {
+  margin-left: 25px;
+}
+
+.photo-frame_block5_1 {
+  display: inline-flex;
+  transform: rotate(2.732deg);
+}
+
+.photo-frame_block5_2 {
+  display: flex;
+  width: 358px;
+  transform: rotate(6.637deg);
+}
+
+.right-part_block5 {
+  position: relative;
+}
+
+.photo-frame_block5_1 {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+.photo-frame_block5_2 {
+  position: relative;
+  z-index: 2;
+  top: -400px;
+  left: 300px;
+}
+
+img[src="/IMG/2.png"] {
+  position: absolute;
+  top: 25px;
+  left: 305px;
+  z-index: 3; /* Третье изображение накладывается на первое */
+  width: 272px;
+  height: 213px;
+  transform: rotate(-142.788deg);
+  flex-shrink: 0;
+}
+
+.photo-frame_block5_1 img {
+  z-index: 1; /* Первое изображение нижнего слоя */
+}
+
+.block-6 {
+  margin-top: 265px;
+}
+
+.block-6 p {
+  top: 44%;
+}
+
+.photo-frame_block-7 {
+  margin-top: 100px;
+}
+
+.right-part_block-7 h2{
+  margin-top: 15px;
+}
+
+.right-part_p_block7 {
+  margin: -25px 0 20px 237px;
+}
+
+.block-8 img:last-child  {
+  width: 253.597px;
+  height: 335.432px;
+  transform: rotate(-69.837deg);
+  flex-shrink: 0;
+  position: absolute;
+  top: 260px;
+  left: 300px;
+}
+
+.photo-frame_block9_2 {
+  width: 340px;
+  height: 455px;
+  transform: rotate(4.519deg);
+  flex-shrink: 0;
+}
+
+.block-9 {
+  margin-top: 160px
+}
+
+.block-9 p {
+  top: 43%;
+}
+
+.block-10 {
+  width: 1550px;
+  height: 800px;
+}
+
+.block-10 h2 {
+  color: #9B171F;
+  font-family: Anonymous Pro;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+
+.plan {
+  display: flex; 
+  align-items: center; 
+  margin-left: 185px;
+}
+
+.plan img {
+  width: 25px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.plan p {
+  color: #172A5C;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+.right-part_block-10_IMG {
+  width: 473.486px;
+  height: 626.278px;
+  transform: rotate(5.692deg);
+  flex-shrink: 0;
+  position: relative;
+  top: -900px;
+  left: 950px;
+}
+
+.btn {
+  width: 521.62px;
+  height: 121.307px;
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+
+.block-11 {
+  height: 812px;
+  width: 1550px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.block-11 h2{
+  color: #9B171F;
+  font-family: Anonymous Pro;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.block-11_IMG1 {
+  color: #FFF;
+  text-align: center;
+  font-family: Marquette;
+  font-size: 465.577px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 567.64px;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 70px;
+  left: 0px;
+}
+
+.block-11_IMG2 {
+  color: #FFF;
+  text-align: center;
+  font-family: Marquette;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156.06px;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 450px;
+  left: 120px;
+}
+
+.block-11_IMG3 {
+  color: #FFF;
+  text-align: center;
+  font-family: Marquette;
+  font-size: 277px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.922%; /* 337.724px */
+  text-transform: uppercase;
+  position: relative;
+  bottom: -20px;
+  left: 550px;
+}
+
+.block-11_IMG4 {
+  color: #FFF;
+  text-align: center;
+  font-family: Marquette;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.922%; /* 156.06px */
+  text-transform: uppercase;
+  position: relative;
+  bottom: 680px;
+  left: 630px;
+}
+
+.block-11_IMG5 {
+  transform: rotate(-1.749deg);
+  color: #FFF;
+  text-align: center;
+  font-family: Marquette;
+  font-size: 277px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.922%; /* 337.724px */
+  text-transform: uppercase;
+  position: relative;
+  bottom: 485px;
+  left: 725px;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  height: 0px;
+}
+
+.block-12 p:nth-child(1) { 
+  color: rgba(244, 235, 214, 0.20);
+  text-align: center;
+  font-family: Marquette;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121.922%; /* 117.045px */
+  text-transform: uppercase;
+  margin-bottom: 10px; /* Відступ знизу */
+  margin-top: 0px;
+}
+
+.block-12 p:nth-last-child { 
+  color: #F2F0E6;
+  font-family: Anonymous Pro;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center; /* Вирівнювання тексту по центру */
+  margin-top: 10px; /* Відступ зверху */
+}
+
+#answear {
+  color: #172A5C;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Общие стили для мобильных устройств */
+  body {
+    font-size: 16px; /* Настройте размер шрифта по вашему усмотрению */
+  }
+
+  /* Стили для блоков фотогалереи на мобильных устройствах */
+  .block_foto_galery {
+    width: 100%; /* Занимать всю доступную ширину экрана */
+    margin-bottom: 20px; /* Добавьте отступ между блоками */
+  }
+
+  /* Стили для изображений в блоках фотогалереи на мобильных устройствах */
+  .block_foto_galery img {
+    width: 100%; /* Изображение занимает всю ширину блока */
+    height: auto; /* Поддерживаем соотношение сторон */
+  }
