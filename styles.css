@@ -92,6 +92,10 @@ nav {
   gap: 181px;
 }
 
+.headNav li {
+  min-width: 100px;
+}
+
 .headNav>li>a {
   color: #172A5C;
   font-family: 'Anonymous Pro', sans-serif;
@@ -119,13 +123,6 @@ a {
   background: #FFF;
   box-sizing: border-box; /* Забезпечити правильний розрахунок ширини */
   text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .block_foto_galery {
-    flex: 0 0 calc(50% - 10px); /* По одному блоку в ряду на малих екранах */
-    margin-bottom: 10px; /* Зменште відступ для мобільних пристроїв */
-  }
 }
 
 .block_foto_galery img {
@@ -787,4 +784,72 @@ img[src="/IMG/2.png"] {
   line-height: normal;
 }
 
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: 1550px;
+  }
+
+  .headNav {
+    text-align: center;
+    padding: 20px 0px 20px 0px; /* Добавьте вертикальные отступы */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .headNav li {
+    margin: 10px 0; /* Отступы для элементов меню */
+    text-align: center;
+    display: block;
+  }
+
+  .headNav {
+    gap: 35px;
+  }
+
+  .galery_main {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    margin-left: 410px
+  }
+  
+  .block_foto_galery {
+    width: 100%; /* Занимать всю доступную ширину экрана */
+    margin-right: 0; /* Уберите правый отступ для одиночных блоков */
+  }
+
+  footer {
+    width: 1550px;
+  }
+
+  .footer-text1 {
+    margin-right: 80px;
+  }
+
+  .footer-text2 {
+    margin-right: 75px;
+  }
+  .block_foto_galery {
+    text-align: center; /* Центрируем содержимое */
+    margin-left: 0; /* Убираем левый отступ */
+    margin-right: 0; /* Убираем правый отступ */
+
+  }
+
+  .galery_main {
+    display: block;
+  }
+
+  .block_foto_galery img,
+  .block_foto_galery video {
+    width: 100%; /* Занимать всю доступную ширину экрана */
+    height: auto; /* Поддерживать пропорции */
+  }
+
+  .block_foto_galery:nth-child(odd) {
+    margin-left: 0px;
+  }
+}
 
